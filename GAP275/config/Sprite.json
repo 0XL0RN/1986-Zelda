@@ -1,0 +1,32 @@
+{
+    "sprites": [
+        "assets/Block.png",
+        "assets/Coin.png",
+        "assets/Darknut.png",
+        "assets/Dungeon.png",
+        "assets/Fire.png",
+        "assets/Goriya.png",
+        "assets/Heart.png",
+        "assets/Link.png",
+        "assets/Plate.png",
+        "assets/Rupee.png",
+        "assets/Trap.png",
+        "assets/Triforce.png",
+        "assets/Zelda.png",
+        "assets/Menu.png",
+        "assets/Win.png",
+        "assets/Lose.png",
+        "assets/ButtonSilver.png",
+        "assets/MiniButtonSilver.png",
+        "assets/Credits.png",
+        "assets/Bar.png",
+        "assets/Dot.png",
+        "assets/HealthBar.png",
+        "assets/HealthBarFull.png",
+        "assets/MainHealthBarFull.png",
+        "assets/MainHealthBar.png",
+        "assets/Face.png",
+        "assets/HpFrame.png",
+        "assets/Boss.png"
+    ]
+}

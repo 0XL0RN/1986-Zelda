@@ -1,0 +1,175 @@
+{
+    "scene": {
+        "name": "credits",
+        "music": "NULL"
+    },
+    "objects": [
+        {
+            "type": "staticimage",
+            "position": [
+                0,
+                0
+            ],
+            "dimension": [
+                800,
+                600
+            ],
+            "id": "Background",
+            "depth": 0,
+            "components": [
+                {
+                    "type": "Texture",
+                    "id": "Texture",
+                    "sprite": "assets/Credits.png"
+                }
+            ]
+        },
+        {
+            "type": "button",
+            "position": [
+                320,
+                404
+            ],
+            "dimension": [
+                144,
+                48
+            ],
+            "id": "MenuButton",
+            "depth": 1,
+            "components": [
+                {
+                    "type": "Animation",
+                    "sprite": "assets/ButtonSilver.png",
+                    "framerate": 0,
+                    "sequence": [
+                        {
+                            "name": "unpressed",
+                            "first": 0,
+                            "last": 0
+                        },
+                        {
+                            "name": "pressed",
+                            "first": 1,
+                            "last": 1
+                        },
+                        {
+                            "name": "hover",
+                            "first": 2,
+                            "last": 2
+                        },
+                        {
+                            "name": "disabled",
+                            "first": 3,
+                            "last": 3
+                        }
+                    ]
+                },
+                {
+                    "type": "Sound",
+                    "sequence": [
+                        {
+                            "name": "click",
+                            "path": "assets/Audio/ButtonClick.wav"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "statictext",
+            "position": [
+                349,
+                415
+            ],
+            "dimension": [
+                0,
+                0
+            ],
+            "id": "BackText",
+            "depth": 2,
+            "components": [
+                {
+                    "type": "Text",
+                    "text": "Back",
+                    "position": [
+                        349,
+                        415
+                    ],
+                    "font": "assets/Fonts/Nes.ttf"
+                }
+            ]
+        },
+        {
+            "type": "statictext",
+            "position": [
+                269,
+                200
+            ],
+            "dimension": [
+                0,
+                0
+            ],
+            "id": "Name",
+            "depth": 2,
+            "components": [
+                {
+                    "type": "Text",
+                    "text": "Romaan Ahmad",
+                    "position": [
+                        269,
+                        200
+                    ],
+                    "font": "assets/Fonts/Nes.ttf"
+                }
+            ]
+        },
+        {
+            "type": "statictext",
+            "position": [
+                269,
+                100
+            ],
+            "dimension": [
+                0,
+                0
+            ],
+            "id": "Name",
+            "depth": 2,
+            "components": [
+                {
+                    "type": "Text",
+                    "text": "Credits",
+                    "position": [
+                        269,
+                        100
+                    ],
+                    "font": "assets/Fonts/Nes.ttf"
+                }
+            ]
+        },
+        {
+            "type": "statictext",
+            "position": [
+                269,
+                150
+            ],
+            "dimension": [
+                0,
+                0
+            ],
+            "id": "Name",
+            "depth": 2,
+            "components": [
+                {
+                    "type": "Text",
+                    "text": "Professor Miles",
+                    "position": [
+                        269,
+                        150
+                    ],
+                    "font": "assets/Fonts/Nes.ttf"
+                }
+            ]
+        }
+    ]
+}

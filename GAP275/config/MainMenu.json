@@ -1,0 +1,238 @@
+{
+    "scene": {
+        "name": "mainmenu",
+        "music": "NULL"
+    },
+    "objects": [
+        {
+            "type": "staticimage",
+            "position": [
+                0,
+                0
+            ],
+            "dimension": [
+                800,
+                600
+            ],
+            "id": "menu",
+            "depth": 0,
+            "components": [
+                {
+                    "type": "Texture",
+                    "id": "Texture",
+                    "sprite": "assets/Menu.png"
+                }
+            ]
+        },
+        {
+            "type": "button",
+            "position": [
+                320,
+                404
+            ],
+            "dimension": [
+                144,
+                48
+            ],
+            "id": "PlayButton",
+            "depth": 1,
+            "components": [
+                {
+                    "type": "Animation",
+                    "sprite": "assets/ButtonSilver.png",
+                    "framerate": 0,
+                    "sequence": [
+                        {
+                            "name": "unpressed",
+                            "first": 0,
+                            "last": 0
+                        },
+                        {
+                            "name": "pressed",
+                            "first": 1,
+                            "last": 1
+                        },
+                        {
+                            "name": "hover",
+                            "first": 2,
+                            "last": 2
+                        }
+                    ]
+                },
+                {
+                    "type": "Sound",
+                    "sequence": [
+                        {
+                            "name": "click",
+                            "path": "assets/Audio/ButtonClick.wav"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "button",
+            "position": [
+                320,
+                452
+            ],
+            "dimension": [
+                144,
+                48
+            ],
+            "id": "LoadButton",
+            "depth": 1,
+            "components": [
+                {
+                    "type": "Animation",
+                    "sprite": "assets/ButtonSilver.png",
+                    "framerate": 0,
+                    "sequence": [
+                        {
+                            "name": "unpressed",
+                            "first": 0,
+                            "last": 0
+                        },
+                        {
+                            "name": "pressed",
+                            "first": 1,
+                            "last": 1
+                        },
+                        {
+                            "name": "hover",
+                            "first": 2,
+                            "last": 2
+                        }
+                    ]
+                },
+                {
+                    "type": "Sound",
+                    "sequence": [
+                        {
+                            "name": "click",
+                            "path": "assets/Audio/ButtonClick.wav"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "button",
+            "position": [
+                320,
+                500
+            ],
+            "dimension": [
+                144,
+                48
+            ],
+            "id": "CreditButton",
+            "depth": 1,
+            "components": [
+                {
+                    "type": "Animation",
+                    "sprite": "assets/ButtonSilver.png",
+                    "framerate": 0,
+                    "sequence": [
+                        {
+                            "name": "unpressed",
+                            "first": 0,
+                            "last": 0
+                        },
+                        {
+                            "name": "pressed",
+                            "first": 1,
+                            "last": 1
+                        },
+                        {
+                            "name": "hover",
+                            "first": 2,
+                            "last": 2
+                        }
+                    ]
+                },
+                {
+                    "type": "Sound",
+                    "sequence": [
+                        {
+                            "name": "click",
+                            "path": "assets/Audio/ButtonClick.wav"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "statictext",
+            "position": [
+                320,
+                512
+            ],
+            "dimension": [
+                0,
+                0
+            ],
+            "id": "Name",
+            "depth": 2,
+            "components": [
+                {
+                    "type": "Text",
+                    "text": "Credits",
+                    "position": [
+                        325,
+                        512
+                    ],
+                    "font": "assets/Fonts/Nes.ttf"
+                }
+            ]
+        },
+        {
+            "type": "statictext",
+            "position": [
+                353,
+                415
+            ],
+            "dimension": [
+                0,
+                0
+            ],
+            "id": "Name",
+            "depth": 2,
+            "components": [
+                {
+                    "type": "Text",
+                    "text": "Play",
+                    "position": [
+                        353,
+                        415
+                    ],
+                    "font": "assets/Fonts/Nes.ttf"
+                }
+            ]
+        },
+        {
+            "type": "statictext",
+            "position": [
+                353,
+                465
+            ],
+            "dimension": [
+                0,
+                0
+            ],
+            "id": "Name",
+            "depth": 2,
+            "components": [
+                {
+                    "type": "Text",
+                    "text": "Load",
+                    "position": [
+                        353,
+                        465
+                    ],
+                    "font": "assets/Fonts/Nes.ttf"
+                }
+            ]
+        }
+    ]
+}

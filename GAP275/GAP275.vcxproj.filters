@@ -1,0 +1,514 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Window">
+      <UniqueIdentifier>{3a563bf0-b8be-44b8-b780-a4264df759ee}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Util">
+      <UniqueIdentifier>{5fe829e6-17ad-4760-b044-5288f9043143}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameObject">
+      <UniqueIdentifier>{b716c94a-3422-4717-8a64-23e04b61bb95}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="EventHandler">
+      <UniqueIdentifier>{806c3eda-b622-4963-97ca-86b4e4d73d7d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameObject\Objects">
+      <UniqueIdentifier>{e1a6b8ca-10e5-4bb2-9559-94008ae387f7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="EventHandler\KeyBucket">
+      <UniqueIdentifier>{0503e4db-0e38-4c51-b34c-02b9ea01a72e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameObject\Objects\Rupee">
+      <UniqueIdentifier>{dc1952ee-27be-4c86-9435-f700c433becd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameObject\Objects\Enemy">
+      <UniqueIdentifier>{4d81399c-8599-4980-8d4a-ba03c848db77}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Component">
+      <UniqueIdentifier>{646c7efd-bce6-412c-b3e2-f92248b524a2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Component\AnimationComponent">
+      <UniqueIdentifier>{c8ce1c5e-7e22-4a59-95c5-96ca30ced622}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Component\TextureComponent">
+      <UniqueIdentifier>{350e8925-da62-4e10-a6b1-3700201b878a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameObject\Objects\Link">
+      <UniqueIdentifier>{a1185f4d-a737-4fc3-8a47-156d0785e882}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Collision">
+      <UniqueIdentifier>{d0a8eeb2-8c93-4713-8d1b-019cf3bb0be4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Collision\AABB">
+      <UniqueIdentifier>{8d479979-e478-42e3-bba5-cd83b91431f8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Collision\Collider">
+      <UniqueIdentifier>{7011f4db-f4dc-4d61-b018-5d7a314177f7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Collision\Trigger">
+      <UniqueIdentifier>{509e710e-c630-41ff-b085-698393e397e9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Collision\EventQ">
+      <UniqueIdentifier>{e635c4e2-280d-406b-bae8-b63c6228bd47}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Collision\CollisionManager">
+      <UniqueIdentifier>{b1e212f3-dc25-410c-9c7f-de06c5a52fb7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameObject\Objects\Dungeon">
+      <UniqueIdentifier>{292937de-0014-4ad3-ae69-3afaeb4e09a8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameObject\Objects\Block">
+      <UniqueIdentifier>{37caec0c-06d5-4fe9-b8b0-2a31662d185e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameObject\Objects\Fire">
+      <UniqueIdentifier>{dbdf30b0-1f00-47ee-83be-86f4b3449e83}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Src">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Engine">
+      <UniqueIdentifier>{2ab59175-c078-4078-b2be-4b224a7ef26e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameObject\Objects\Heart">
+      <UniqueIdentifier>{f5f98cb6-6e2b-4d47-bbfd-10fdc3729fa0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameObject\Objects\Triforce">
+      <UniqueIdentifier>{320c30d5-f836-4508-863f-b222b161463c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameObject\Objects\Plate">
+      <UniqueIdentifier>{933d7462-cc0d-43aa-9920-83d2db97940c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameObject\Objects\Trap">
+      <UniqueIdentifier>{d294e928-b634-4266-8c62-899a2fc0a60f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Util\TimeHandler">
+      <UniqueIdentifier>{499a9eee-8281-4015-99ca-bd084face0f7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scene">
+      <UniqueIdentifier>{342e103f-2e1a-41da-a5af-d7c87380bdbf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scene\GameplayState">
+      <UniqueIdentifier>{001d7b37-34e4-4de8-aae7-24769153d1db}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scene\LoseState">
+      <UniqueIdentifier>{b752634d-e393-44b5-9a3b-07dd37e2438f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scene\MainMenuState">
+      <UniqueIdentifier>{abb9982b-f306-4ba3-b992-d10579235f6f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scene\SceneFactory">
+      <UniqueIdentifier>{3b738fed-5521-4e1a-8c47-5d4da84f3d85}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scene\WinState">
+      <UniqueIdentifier>{6900f380-9696-48fb-8267-1b9bd49309fb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scene\SceneStateMachine">
+      <UniqueIdentifier>{b1afc8dc-e234-4dc5-8559-2c791747c20d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameObject\Controls">
+      <UniqueIdentifier>{d783382a-fcc5-4506-8cc1-9f8382f7e628}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameObject\Controls\StaticText">
+      <UniqueIdentifier>{944a37c0-e846-41cc-b3d0-f3a7416c6b05}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameObject\Controls\StaticImage">
+      <UniqueIdentifier>{582b172a-5630-4db7-bd34-701c456eeb44}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Component\TextComponent">
+      <UniqueIdentifier>{cea5c1af-300a-4bc4-beaa-d9ed222eb996}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameObject\Controls\Button">
+      <UniqueIdentifier>{67457f50-4cd7-4240-9f1d-c574e7a89456}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scene\CreditsScene">
+      <UniqueIdentifier>{9bbe011f-1550-406d-95dd-5cd818ddfafb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameObject\Controls\Slider">
+      <UniqueIdentifier>{ffdb446d-9fd4-4a75-9653-a6178e258fb3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameObject\Controls\Bar">
+      <UniqueIdentifier>{1b6290c0-ed76-40f4-a13f-71274624a2a6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Component\SoundComponent">
+      <UniqueIdentifier>{0d9936d7-b45b-443c-945a-4ee72f2ad11f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Ai">
+      <UniqueIdentifier>{7e8fa795-6255-44bc-a0bf-28384d65a014}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Ai\EnemyAi">
+      <UniqueIdentifier>{d59db92a-7e8c-443b-b91b-492360517e19}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Util\Math">
+      <UniqueIdentifier>{958d5b41-dc11-4422-9b59-81358ecef0b9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Ai\EnemyAi\ChaseState">
+      <UniqueIdentifier>{a7e0e738-9b75-49b1-9cc0-506c47d3432d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Ai\EnemyAi\WanderState">
+      <UniqueIdentifier>{335fa7cf-c5a6-4929-87dd-1288139d9f52}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameObject\Objects\Boss">
+      <UniqueIdentifier>{7765cfcb-6feb-448b-89c3-3700b01d4f0d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Util\RNG">
+      <UniqueIdentifier>{36c26cbd-6dc7-424f-9718-f8f5f6a3b43d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Util\RNG\mt19937">
+      <UniqueIdentifier>{1c1595eb-bfbc-4e62-9024-7f05e3e70540}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Ai\BossAi">
+      <UniqueIdentifier>{4d8ee292-68e9-4e4c-acc5-c1359c059427}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Ai\BossAi\SleepState">
+      <UniqueIdentifier>{19e01c3a-88c2-415b-8016-40be357d2a64}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Ai\BossAi\ChaseState">
+      <UniqueIdentifier>{01a0b3f2-1abc-450e-859e-e65df8249169}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Ai\BossAi\WanderState">
+      <UniqueIdentifier>{668da8d5-0db1-4189-b118-056491e87223}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scene\GameplayState\Spawner">
+      <UniqueIdentifier>{19298572-d7ad-4fbf-98d6-efc14ca20ef3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scene\SceneSaver">
+      <UniqueIdentifier>{97121549-06aa-4be1-b3ca-88ee4cba3bde}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scene\SaveMenuState">
+      <UniqueIdentifier>{573948dd-27cc-4936-9a7c-8196ef95c2ba}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Component\ParticleComponent">
+      <UniqueIdentifier>{d8e2ee69-f9f5-4fae-82f0-31dbd263e45e}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Window.cpp">
+      <Filter>Window</Filter>
+    </ClCompile>
+    <ClCompile Include="EventHandler.cpp">
+      <Filter>EventHandler</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine.cpp">
+      <Filter>Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="KeyBucket.cpp">
+      <Filter>EventHandler\KeyBucket</Filter>
+    </ClCompile>
+    <ClCompile Include="Main.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="Link.cpp">
+      <Filter>GameObject\Objects\Link</Filter>
+    </ClCompile>
+    <ClCompile Include="Dungeon.cpp">
+      <Filter>GameObject\Objects\Dungeon</Filter>
+    </ClCompile>
+    <ClCompile Include="Rupee.cpp">
+      <Filter>GameObject\Objects\Rupee</Filter>
+    </ClCompile>
+    <ClCompile Include="Enemy.cpp">
+      <Filter>GameObject\Objects\Enemy</Filter>
+    </ClCompile>
+    <ClCompile Include="AnimationComponent.cpp">
+      <Filter>Component\AnimationComponent</Filter>
+    </ClCompile>
+    <ClCompile Include="TextureComponent.cpp">
+      <Filter>Component\TextureComponent</Filter>
+    </ClCompile>
+    <ClCompile Include="GameObject.cpp">
+      <Filter>GameObject</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneFactory.cpp">
+      <Filter>Scene\SceneFactory</Filter>
+    </ClCompile>
+    <ClCompile Include="AABB.h">
+      <Filter>Collision\AABB</Filter>
+    </ClCompile>
+    <ClCompile Include="AABB.cpp">
+      <Filter>Collision\AABB</Filter>
+    </ClCompile>
+    <ClCompile Include="Collider.h">
+      <Filter>Collision\Collider</Filter>
+    </ClCompile>
+    <ClCompile Include="Collider.cpp">
+      <Filter>Collision\Collider</Filter>
+    </ClCompile>
+    <ClCompile Include="Trigger.h">
+      <Filter>Collision\Trigger</Filter>
+    </ClCompile>
+    <ClCompile Include="Trigger.cpp">
+      <Filter>Collision\Trigger</Filter>
+    </ClCompile>
+    <ClCompile Include="EventQ.h">
+      <Filter>Collision\EventQ</Filter>
+    </ClCompile>
+    <ClCompile Include="CollisionManager.h">
+      <Filter>Collision\CollisionManager</Filter>
+    </ClCompile>
+    <ClCompile Include="CollisionManager.cpp">
+      <Filter>Collision\CollisionManager</Filter>
+    </ClCompile>
+    <ClCompile Include="EventQ.cpp">
+      <Filter>Collision\EventQ</Filter>
+    </ClCompile>
+    <ClCompile Include="Block.cpp">
+      <Filter>GameObject\Objects\Block</Filter>
+    </ClCompile>
+    <ClCompile Include="Fire.cpp">
+      <Filter>GameObject\Objects\Fire</Filter>
+    </ClCompile>
+    <ClCompile Include="Heart.cpp">
+      <Filter>GameObject\Objects\Heart</Filter>
+    </ClCompile>
+    <ClCompile Include="Triforce.cpp">
+      <Filter>GameObject\Objects\Triforce</Filter>
+    </ClCompile>
+    <ClCompile Include="Plate.cpp">
+      <Filter>GameObject\Objects\Plate</Filter>
+    </ClCompile>
+    <ClCompile Include="Trap.cpp">
+      <Filter>GameObject\Objects\Trap</Filter>
+    </ClCompile>
+    <ClCompile Include="TimeHandler.cpp">
+      <Filter>Util\TimeHandler</Filter>
+    </ClCompile>
+    <ClCompile Include="MainMenuState.cpp">
+      <Filter>Scene\MainMenuState</Filter>
+    </ClCompile>
+    <ClCompile Include="GameplayState.cpp">
+      <Filter>Scene\GameplayState</Filter>
+    </ClCompile>
+    <ClCompile Include="StaticImage.cpp">
+      <Filter>GameObject\Controls\StaticImage</Filter>
+    </ClCompile>
+    <ClCompile Include="WinState.cpp">
+      <Filter>Scene\WinState</Filter>
+    </ClCompile>
+    <ClCompile Include="LoseState.cpp">
+      <Filter>Scene\LoseState</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneStateMachine.cpp">
+      <Filter>Scene\SceneStateMachine</Filter>
+    </ClCompile>
+    <ClCompile Include="StaticText.cpp">
+      <Filter>GameObject\Controls\StaticText</Filter>
+    </ClCompile>
+    <ClCompile Include="TextComponent.cpp">
+      <Filter>Component\TextComponent</Filter>
+    </ClCompile>
+    <ClCompile Include="Button.cpp">
+      <Filter>GameObject\Controls\Button</Filter>
+    </ClCompile>
+    <ClCompile Include="CreditsScene.cpp">
+      <Filter>Scene\CreditsScene</Filter>
+    </ClCompile>
+    <ClCompile Include="Slider.cpp">
+      <Filter>GameObject\Controls\Slider</Filter>
+    </ClCompile>
+    <ClCompile Include="Bar.cpp">
+      <Filter>GameObject\Controls\Bar</Filter>
+    </ClCompile>
+    <ClCompile Include="SoundComponent.cpp">
+      <Filter>Component\SoundComponent</Filter>
+    </ClCompile>
+    <ClCompile Include="EnemyStateMachine.cpp">
+      <Filter>Ai\EnemyAi</Filter>
+    </ClCompile>
+    <ClCompile Include="EnemyChaseState.cpp">
+      <Filter>Ai\EnemyAi\ChaseState</Filter>
+    </ClCompile>
+    <ClCompile Include="EnemyWanderState.cpp">
+      <Filter>Ai\EnemyAi\WanderState</Filter>
+    </ClCompile>
+    <ClCompile Include="Boss.cpp">
+      <Filter>GameObject\Objects\Boss</Filter>
+    </ClCompile>
+    <ClCompile Include="BossStateMachine.cpp">
+      <Filter>Ai\BossAi</Filter>
+    </ClCompile>
+    <ClCompile Include="BossSleepState.cpp">
+      <Filter>Ai\BossAi\SleepState</Filter>
+    </ClCompile>
+    <ClCompile Include="BossWanderState.cpp">
+      <Filter>Ai\BossAi\WanderState</Filter>
+    </ClCompile>
+    <ClCompile Include="BossChaseState.cpp">
+      <Filter>Ai\BossAi\ChaseState</Filter>
+    </ClCompile>
+    <ClCompile Include="mt19937.cpp">
+      <Filter>Util\RNG\mt19937</Filter>
+    </ClCompile>
+    <ClCompile Include="EntitySpawner.cpp">
+      <Filter>Scene\GameplayState\Spawner</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneSaver.cpp">
+      <Filter>Scene\SceneSaver</Filter>
+    </ClCompile>
+    <ClCompile Include="SaveMenu.cpp">
+      <Filter>Scene\SaveMenuState</Filter>
+    </ClCompile>
+    <ClCompile Include="ParticleComponent.cpp">
+      <Filter>Component\ParticleComponent</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Window.h">
+      <Filter>Window</Filter>
+    </ClInclude>
+    <ClInclude Include="GameObject.h">
+      <Filter>GameObject</Filter>
+    </ClInclude>
+    <ClInclude Include="EventHandler.h">
+      <Filter>EventHandler</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine.h">
+      <Filter>Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="KeyBucket.h">
+      <Filter>EventHandler\KeyBucket</Filter>
+    </ClInclude>
+    <ClInclude Include="Link.h">
+      <Filter>GameObject\Objects\Link</Filter>
+    </ClInclude>
+    <ClInclude Include="Dungeon.h">
+      <Filter>GameObject\Objects\Dungeon</Filter>
+    </ClInclude>
+    <ClInclude Include="Rupee.h">
+      <Filter>GameObject\Objects\Rupee</Filter>
+    </ClInclude>
+    <ClInclude Include="Enemy.h">
+      <Filter>GameObject\Objects\Enemy</Filter>
+    </ClInclude>
+    <ClInclude Include="json.hpp">
+      <Filter>Util</Filter>
+    </ClInclude>
+    <ClInclude Include="IComponent.h">
+      <Filter>Component</Filter>
+    </ClInclude>
+    <ClInclude Include="AnimationComponent.h">
+      <Filter>Component\AnimationComponent</Filter>
+    </ClInclude>
+    <ClInclude Include="TextureComponent.h">
+      <Filter>Component\TextureComponent</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneFactory.h">
+      <Filter>Scene\SceneFactory</Filter>
+    </ClInclude>
+    <ClInclude Include="Block.h">
+      <Filter>GameObject\Objects\Block</Filter>
+    </ClInclude>
+    <ClInclude Include="Fire.h">
+      <Filter>GameObject\Objects\Fire</Filter>
+    </ClInclude>
+    <ClInclude Include="Heart.h">
+      <Filter>GameObject\Objects\Heart</Filter>
+    </ClInclude>
+    <ClInclude Include="Triforce.h">
+      <Filter>GameObject\Objects\Triforce</Filter>
+    </ClInclude>
+    <ClInclude Include="Plate.h">
+      <Filter>GameObject\Objects\Plate</Filter>
+    </ClInclude>
+    <ClInclude Include="Trap.h">
+      <Filter>GameObject\Objects\Trap</Filter>
+    </ClInclude>
+    <ClInclude Include="TimeHandler.h">
+      <Filter>Util\TimeHandler</Filter>
+    </ClInclude>
+    <ClInclude Include="MainMenuState.h">
+      <Filter>Scene\MainMenuState</Filter>
+    </ClInclude>
+    <ClInclude Include="GameplayState.h">
+      <Filter>Scene\GameplayState</Filter>
+    </ClInclude>
+    <ClInclude Include="StaticImage.h">
+      <Filter>GameObject\Controls\StaticImage</Filter>
+    </ClInclude>
+    <ClInclude Include="WinState.h">
+      <Filter>Scene\WinState</Filter>
+    </ClInclude>
+    <ClInclude Include="LoseState.h">
+      <Filter>Scene\LoseState</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneStateMachine.h">
+      <Filter>Scene\SceneStateMachine</Filter>
+    </ClInclude>
+    <ClInclude Include="StaticText.h">
+      <Filter>GameObject\Controls\StaticText</Filter>
+    </ClInclude>
+    <ClInclude Include="TextComponent.h">
+      <Filter>Component\TextComponent</Filter>
+    </ClInclude>
+    <ClInclude Include="Button.h">
+      <Filter>GameObject\Controls\Button</Filter>
+    </ClInclude>
+    <ClInclude Include="CreditsScene.h">
+      <Filter>Scene\CreditsScene</Filter>
+    </ClInclude>
+    <ClInclude Include="Slider.h">
+      <Filter>GameObject\Controls\Slider</Filter>
+    </ClInclude>
+    <ClInclude Include="Bar.h">
+      <Filter>GameObject\Controls\Bar</Filter>
+    </ClInclude>
+    <ClInclude Include="SoundComponent.h">
+      <Filter>Component\SoundComponent</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneState.h">
+      <Filter>Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="EnemyStateMachine.h">
+      <Filter>Ai\EnemyAi</Filter>
+    </ClInclude>
+    <ClInclude Include="AiState.h">
+      <Filter>Ai</Filter>
+    </ClInclude>
+    <ClInclude Include="EnemyChaseState.h">
+      <Filter>Ai\EnemyAi\ChaseState</Filter>
+    </ClInclude>
+    <ClInclude Include="EnemyWanderState.h">
+      <Filter>Ai\EnemyAi\WanderState</Filter>
+    </ClInclude>
+    <ClInclude Include="Vector2.h">
+      <Filter>Util\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Boss.h">
+      <Filter>GameObject\Objects\Boss</Filter>
+    </ClInclude>
+    <ClInclude Include="BossStateMachine.h">
+      <Filter>Ai\BossAi</Filter>
+    </ClInclude>
+    <ClInclude Include="BossSleepState.h">
+      <Filter>Ai\BossAi\SleepState</Filter>
+    </ClInclude>
+    <ClInclude Include="BossChaseState.h">
+      <Filter>Ai\BossAi\ChaseState</Filter>
+    </ClInclude>
+    <ClInclude Include="mt19937.h">
+      <Filter>Util\RNG\mt19937</Filter>
+    </ClInclude>
+    <ClInclude Include="EntitySpawner.h">
+      <Filter>Scene\GameplayState\Spawner</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneSaver.h">
+      <Filter>Scene\SceneSaver</Filter>
+    </ClInclude>
+    <ClInclude Include="SaveMenu.h">
+      <Filter>Scene\SaveMenuState</Filter>
+    </ClInclude>
+    <ClInclude Include="ParticleComponent.h">
+      <Filter>Component\ParticleComponent</Filter>
+    </ClInclude>
+    <ClInclude Include="Vector4.h">
+      <Filter>Util\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Vector3.h">
+      <Filter>Util\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="BossWanderState.h">
+      <Filter>Ai\BossAi\WanderState</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

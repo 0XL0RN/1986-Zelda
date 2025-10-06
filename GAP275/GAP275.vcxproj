@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>17.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{0280a11b-b3cb-4e66-b750-732e11f8f5de}</ProjectGuid>
+    <RootNamespace>GAP275</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>ZeldaEngine</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(SolutionDir)lib\SDL3\include;$(SolutionDir)lib\SDL3_image\include;$(SolutionDir)lib\SDL3_ttf\include;$(SolutionDir)lib\SDL3_mixer\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(SolutionDir)lib\SDL3\lib\x86;$(SolutionDir)lib\SDL3_image\lib\x86;$(SolutionDir)lib\SDL3_ttf\lib\x86;$(SolutionDir)lib\SDL3_mixer\lib\x86;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>SDL3.lib;SDL3_image.lib;SDL3_ttf.lib;SDL2_mixer.lib</AdditionalDependencies>
+    </Link>
+    <PostBuildEvent>
+      <Command>copy "$(SolutionDir)lib\SDL3\lib\x86\SDL3.dll" "$(OutDir)"</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(SolutionDir)lib\SDL3\include;$(SolutionDir)lib\SDL3_image\include;$(SolutionDir)lib\SDL3_ttf\include;$(SolutionDir)lib\SDL3_mixer\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(SolutionDir)lib\SDL3\lib\x86;$(SolutionDir)lib\SDL3_image\lib\x86;$(SolutionDir)lib\SDL3_ttf\lib\x86;$(SolutionDir)lib\SDL3_mixer\lib\x86;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>SDL3.lib;SDL3_image.lib;SDL3_ttf.lib;SDL2_mixer.lib</AdditionalDependencies>
+    </Link>
+    <PostBuildEvent>
+      <Command>copy "$(SolutionDir)lib\SDL3\lib\x86\SDL3.dll" "$(OutDir)"</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(SolutionDir)lib\SDL3\include;$(SolutionDir)lib\SDL3_image\include;$(SolutionDir)lib\SDL3_ttf\include;$(SolutionDir)lib\SDL3_mixer\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+      <TreatWarningAsError>false</TreatWarningAsError>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(SolutionDir)lib\SDL3\lib\x64;$(SolutionDir)lib\SDL3_image\lib\x64;$(SolutionDir)lib\SDL3_ttf\lib\x64;$(SolutionDir)lib\SDL3_mixer\lib\x64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>SDL3.lib;SDL3_image.lib;SDL3_ttf.lib;SDL3_mixer.lib</AdditionalDependencies>
+    </Link>
+    <PostBuildEvent>
+      <Command>copy "$(SolutionDir)lib\SDL3\lib\x64\SDL3.dll" "$(OutDir)"
+copy "$(SolutionDir)lib\SDL3_image\lib\x64\SDL3_image.dll" "$(OutDir)"
+copy "$(SolutionDir)lib\SDL3_ttf\lib\x64\SDL3_ttf.dll" "$(OutDir)"
+copy "$(SolutionDir)lib\SDL3_mixer\lib\x64\SDL3_mixer.dll" "$(OutDir)"</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(SolutionDir)lib\SDL3\include;$(SolutionDir)lib\SDL3_image\include;$(SolutionDir)lib\SDL3_ttf\include;$(SolutionDir)lib\SDL3_mixer\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+      <TreatWarningAsError>false</TreatWarningAsError>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(SolutionDir)lib\SDL3\lib\x64;$(SolutionDir)lib\SDL3_image\lib\x64;$(SolutionDir)lib\SDL3_ttf\lib\x64;$(SolutionDir)lib\SDL3_mixer\lib\x64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>SDL3.lib;SDL3_image.lib;SDL3_ttf.lib;SDL3_mixer.lib</AdditionalDependencies>
+    </Link>
+    <PostBuildEvent>
+      <Command>copy "$(SolutionDir)lib\SDL3\lib\x64\SDL3.dll" "$(OutDir)"
+copy "$(SolutionDir)lib\SDL3_image\lib\x64\SDL3_image.dll" "$(OutDir)"
+copy "$(SolutionDir)lib\SDL3_ttf\lib\x64\SDL3_ttf.dll" "$(OutDir)"
+copy "$(SolutionDir)lib\SDL3_mixer\lib\x64\SDL3_mixer.dll" "$(OutDir)"</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="AABB.cpp" />
+    <ClCompile Include="AABB.h" />
+    <ClCompile Include="BossWanderState.cpp" />
+    <ClCompile Include="BossChaseState.cpp" />
+    <ClCompile Include="BossSleepState.cpp" />
+    <ClCompile Include="BossStateMachine.cpp" />
+    <ClCompile Include="EnemyChaseState.cpp" />
+    <ClCompile Include="EnemyStateMachine.cpp" />
+    <ClCompile Include="AnimationComponent.cpp" />
+    <ClCompile Include="Bar.cpp" />
+    <ClCompile Include="Block.cpp" />
+    <ClCompile Include="Button.cpp" />
+    <ClCompile Include="CreditsScene.cpp" />
+    <ClCompile Include="Dungeon.cpp" />
+    <ClCompile Include="Collider.cpp" />
+    <ClCompile Include="Collider.h" />
+    <ClCompile Include="CollisionManager.cpp" />
+    <ClCompile Include="CollisionManager.h" />
+    <ClCompile Include="Enemy.cpp" />
+    <ClCompile Include="EnemyWanderState.cpp" />
+    <ClCompile Include="Engine.cpp" />
+    <ClCompile Include="EntitySpawner.cpp" />
+    <ClCompile Include="EventHandler.cpp" />
+    <ClCompile Include="EventQ.cpp" />
+    <ClCompile Include="EventQ.h" />
+    <ClCompile Include="Fire.cpp" />
+    <ClCompile Include="GameObject.cpp" />
+    <ClCompile Include="GameplayState.cpp" />
+    <ClCompile Include="Heart.cpp" />
+    <ClCompile Include="KeyBucket.cpp" />
+    <ClCompile Include="LoseState.cpp" />
+    <ClCompile Include="Main.cpp" />
+    <ClCompile Include="Link.cpp" />
+    <ClCompile Include="MainMenuState.cpp" />
+    <ClCompile Include="mt19937.cpp" />
+    <ClCompile Include="ParticleComponent.cpp" />
+    <ClCompile Include="Plate.cpp" />
+    <ClCompile Include="Rupee.cpp" />
+    <ClCompile Include="SaveMenu.cpp" />
+    <ClCompile Include="SceneFactory.cpp" />
+    <ClCompile Include="SceneSaver.cpp" />
+    <ClCompile Include="Slider.cpp" />
+    <ClCompile Include="SoundComponent.cpp" />
+    <ClCompile Include="StaticImage.cpp" />
+    <ClCompile Include="SceneStateMachine.cpp" />
+    <ClCompile Include="StaticText.cpp" />
+    <ClCompile Include="TextComponent.cpp" />
+    <ClCompile Include="TextureComponent.cpp" />
+    <ClCompile Include="TimeHandler.cpp" />
+    <ClCompile Include="Trap.cpp" />
+    <ClCompile Include="Triforce.cpp" />
+    <ClCompile Include="Trigger.cpp" />
+    <ClCompile Include="Trigger.h" />
+    <ClCompile Include="Boss.cpp" />
+    <ClCompile Include="Window.cpp" />
+    <ClCompile Include="WinState.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AiState.h" />
+    <ClInclude Include="BossWanderState.h" />
+    <ClInclude Include="BossChaseState.h" />
+    <ClInclude Include="BossSleepState.h" />
+    <ClInclude Include="BossStateMachine.h" />
+    <ClInclude Include="EnemyChaseState.h" />
+    <ClInclude Include="EnemyStateMachine.h" />
+    <ClInclude Include="AnimationComponent.h" />
+    <ClInclude Include="Bar.h" />
+    <ClInclude Include="Block.h" />
+    <ClInclude Include="Button.h" />
+    <ClInclude Include="CreditsScene.h" />
+    <ClInclude Include="Dungeon.h" />
+    <ClInclude Include="Enemy.h" />
+    <ClInclude Include="EnemyWanderState.h" />
+    <ClInclude Include="Engine.h" />
+    <ClInclude Include="EntitySpawner.h" />
+    <ClInclude Include="EventHandler.h" />
+    <ClInclude Include="Fire.h" />
+    <ClInclude Include="GameObject.h" />
+    <ClInclude Include="GameplayState.h" />
+    <ClInclude Include="Heart.h" />
+    <ClInclude Include="IComponent.h" />
+    <ClInclude Include="json.hpp" />
+    <ClInclude Include="KeyBucket.h" />
+    <ClInclude Include="Link.h" />
+    <ClInclude Include="LoseState.h" />
+    <ClInclude Include="MainMenuState.h" />
+    <ClInclude Include="mt19937.h" />
+    <ClInclude Include="ParticleComponent.h" />
+    <ClInclude Include="Plate.h" />
+    <ClInclude Include="Rupee.h" />
+    <ClInclude Include="SaveMenu.h" />
+    <ClInclude Include="SceneSaver.h" />
+    <ClInclude Include="Slider.h" />
+    <ClInclude Include="SoundComponent.h" />
+    <ClInclude Include="SceneState.h" />
+    <ClInclude Include="StaticImage.h" />
+    <ClInclude Include="SceneStateMachine.h" />
+    <ClInclude Include="StaticText.h" />
+    <ClInclude Include="TextComponent.h" />
+    <ClInclude Include="TextureComponent.h" />
+    <ClInclude Include="SceneFactory.h" />
+    <ClInclude Include="TimeHandler.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="Trap.h" />
+    <ClInclude Include="Triforce.h" />
+    <ClInclude Include="Vector2.h" />
+    <ClInclude Include="Boss.h" />
+    <ClInclude Include="Vector3.h" />
+    <ClInclude Include="Vector4.h" />
+    <ClInclude Include="Window.h" />
+    <ClInclude Include="WinState.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

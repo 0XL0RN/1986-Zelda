@@ -1,0 +1,262 @@
+{
+    "scene": {
+        "name": "losescene",
+        "music": "NULL"
+    },
+    "objects": [
+        {
+            "type": "staticimage",
+            "position": [
+                0,
+                0
+            ],
+            "dimension": [
+                800,
+                600
+            ],
+            "id": "Background",
+            "depth": 0,
+            "components": [
+                {
+                    "type": "Texture",
+                    "id": "Texture",
+                    "sprite": "assets/Lose.png"
+                }
+            ]
+        },
+        {
+            "type": "button",
+            "position": [
+                320,
+                404
+            ],
+            "dimension": [
+                144,
+                48
+            ],
+            "id": "PlayButton",
+            "depth": 1,
+            "components": [
+                {
+                    "type": "Animation",
+                    "sprite": "assets/ButtonSilver.png",
+                    "framerate": 0,
+                    "sequence": [
+                        {
+                            "name": "unpressed",
+                            "first": 0,
+                            "last": 0
+                        },
+                        {
+                            "name": "pressed",
+                            "first": 1,
+                            "last": 1
+                        },
+                        {
+                            "name": "hover",
+                            "first": 2,
+                            "last": 2
+                        }
+                    ]
+                },
+                {
+                    "type": "Sound",
+                    "sequence": [
+                        {
+                            "name": "click",
+                            "path": "assets/Audio/ButtonClick.wav"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "button",
+            "position": [
+                320,
+                456
+            ],
+            "dimension": [
+                144,
+                48
+            ],
+            "id": "MainButton",
+            "depth": 1,
+            "components": [
+                {
+                    "type": "Animation",
+                    "sprite": "assets/ButtonSilver.png",
+                    "framerate": 0,
+                    "sequence": [
+                        {
+                            "name": "unpressed",
+                            "first": 0,
+                            "last": 0
+                        },
+                        {
+                            "name": "pressed",
+                            "first": 1,
+                            "last": 1
+                        },
+                        {
+                            "name": "hover",
+                            "first": 2,
+                            "last": 2
+                        }
+                    ]
+                },
+                {
+                    "type": "Sound",
+                    "sequence": [
+                        {
+                            "name": "click",
+                            "path": "assets/Audio/ButtonClick.wav"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "button",
+            "position": [
+                320,
+                508
+            ],
+            "dimension": [
+                144,
+                48
+            ],
+            "id": "ExitButton",
+            "depth": 1,
+            "components": [
+                {
+                    "type": "Animation",
+                    "sprite": "assets/ButtonSilver.png",
+                    "framerate": 0,
+                    "sequence": [
+                        {
+                            "name": "unpressed",
+                            "first": 0,
+                            "last": 0
+                        },
+                        {
+                            "name": "pressed",
+                            "first": 1,
+                            "last": 1
+                        },
+                        {
+                            "name": "hover",
+                            "first": 2,
+                            "last": 2
+                        }
+                    ]
+                },
+                {
+                    "type": "Sound",
+                    "sequence": [
+                        {
+                            "name": "click",
+                            "path": "assets/Audio/ButtonClick.wav"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "statictext",
+            "position": [
+                349,
+                415
+            ],
+            "dimension": [
+                0,
+                0
+            ],
+            "id": "Name",
+            "depth": 2,
+            "components": [
+                {
+                    "type": "Text",
+                    "text": "Respawn",
+                    "position": [
+                        325,
+                        415
+                    ],
+                    "font": "assets/Fonts/Nes.ttf"
+                }
+            ]
+        },
+        {
+            "type": "statictext",
+            "position": [
+                330,
+                470
+            ],
+            "dimension": [
+                0,
+                0
+            ],
+            "id": "Name",
+            "depth": 2,
+            "components": [
+                {
+                    "type": "Text",
+                    "text": "Menu",
+                    "position": [
+                        350,
+                        465
+                    ],
+                    "font": "assets/Fonts/Nes.ttf"
+                }
+            ]
+        },
+        {
+            "type": "statictext",
+            "position": [
+                330,
+                470
+            ],
+            "dimension": [
+                0,
+                0
+            ],
+            "id": "Name",
+            "depth": 2,
+            "components": [
+                {
+                    "type": "Text",
+                    "text": "Exit",
+                    "position": [
+                        350,
+                        518
+                    ],
+                    "font": "assets/Fonts/Nes.ttf"
+                }
+            ]
+        },
+        {
+            "type": "statictext",
+            "position": [
+                330,
+                470
+            ],
+            "dimension": [
+                0,
+                0
+            ],
+            "id": "Name",
+            "depth": 2,
+            "components": [
+                {
+                    "type": "Text",
+                    "text": "You Died",
+                    "position": [
+                        325,
+                        140
+                    ],
+                    "font": "assets/Fonts/Nes.ttf"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,9 @@
+{
+    "sounds": [
+        "assets/Audio/Ping.wav",
+        "assets/Audio/Bump.wav",
+        "assets/Audio/Hurt.wav",
+        "assets/Audio/ButtonClick.wav",
+        "assets/Audio/Heal.wav"
+    ]
+}

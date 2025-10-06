@@ -1,0 +1,512 @@
+{
+    "scene": {
+        "name": "gameplay",
+        "music": "assets/Audio/MelancholicWalk.wav"
+    },
+    "objects": [
+        {
+            "type": "dungeon",
+            "position": [
+                0,
+                0
+            ],
+            "dimension": [
+                800,
+                600
+            ],
+            "id": "Background",
+            "depth": 0,
+            "components": [
+                {
+                    "type": "Texture",
+                    "id": "Texture",
+                    "sprite": "assets/Dungeon.png"
+                }
+            ]
+        },
+        {
+            "type": "link",
+            "position": [
+                376,
+                276
+            ],
+            "dimension": [
+                48,
+                48
+            ],
+            "id": "Link",
+            "depth": 3,
+            "components": [
+                {
+                    "type": "Animation",
+                    "sprite": "assets/Link.png",
+                    "framerate": 6,
+                    "sequence": [
+                        {
+                            "name": "down",
+                            "first": 0,
+                            "last": 1
+                        },
+                        {
+                            "name": "up",
+                            "first": 6,
+                            "last": 7
+                        },
+                        {
+                            "name": "left",
+                            "first": 2,
+                            "last": 3
+                        },
+                        {
+                            "name": "right",
+                            "first": 4,
+                            "last": 5
+                        }
+                    ]
+                },
+                {
+                    "type": "Text",
+                    "text": "20",
+                    "position": [
+                        250,
+                        15
+                    ],
+                    "font": "assets/Fonts/Nes.ttf"
+                },
+                {
+                    "type": "Sound",
+                    "sequence": [
+                        {
+                            "name": "bump",
+                            "path": "assets/Audio/Bump.wav"
+                        },
+                        {
+                            "name": "hurt",
+                            "path": "assets/Audio/Hurt.wav"
+                        },
+                        {
+                            "name": "heal",
+                            "path": "assets/Audio/Heal.wav"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "rupee",
+            "position": [
+                224,
+                276
+            ],
+            "dimension": [
+                24,
+                48
+            ],
+            "id": "RupeeOne",
+            "depth": 1,
+            "components": [
+                {
+                    "type": "Animation",
+                    "sprite": "assets/Coin.png",
+                    "framerate": 2,
+                    "sequence": [
+                        {
+                            "name": "shine",
+                            "first": 0,
+                            "last": 1
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "darknut",
+            "position": [
+                640,
+                276
+            ],
+            "dimension": [
+                48,
+                48
+            ],
+            "id": "EnemyOne",
+            "depth": 2,
+            "components": [
+                {
+                    "type": "Animation",
+                    "sprite": "assets/Darknut.png",
+                    "framerate": 6,
+                    "sequence": [
+                        {
+                            "name": "down",
+                            "first": 0,
+                            "last": 1
+                        },
+                        {
+                            "name": "up",
+                            "first": 6,
+                            "last": 7
+                        },
+                        {
+                            "name": "left",
+                            "first": 2,
+                            "last": 3
+                        },
+                        {
+                            "name": "right",
+                            "first": 4,
+                            "last": 5
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "block",
+            "position": [
+                304,
+                180
+            ],
+            "dimension": [
+                48,
+                48
+            ],
+            "id": "BlockOne",
+            "depth": 1,
+            "components": [
+                {
+                    "type": "Texture",
+                    "id": "Texture",
+                    "sprite": "assets/Block.png"
+                }
+            ]
+        },
+        {
+            "type": "block",
+            "position": [
+                448,
+                276
+            ],
+            "dimension": [
+                48,
+                48
+            ],
+            "id": "BlockTwo",
+            "depth": 1,
+            "components": [
+                {
+                    "type": "Texture",
+                    "id": "Texture",
+                    "sprite": "assets/Block.png"
+                }
+            ]
+        },
+        {
+            "type": "fire",
+            "position": [
+                544,
+                373
+            ],
+            "dimension": [
+                48,
+                48
+            ],
+            "id": "FireOne",
+            "depth": 1,
+            "components": [
+                {
+                    "type": "Animation",
+                    "sprite": "assets/Fire.png",
+                    "framerate": 6,
+                    "sequence": [
+                        {
+                            "name": "laflame",
+                            "first": 0,
+                            "last": 1
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "heart",
+            "position": [
+                597,
+                186
+            ],
+            "dimension": [
+                39,
+                39
+            ],
+            "id": "HeartOne",
+            "depth": 1,
+            "components": [
+                {
+                    "type": "Texture",
+                    "id": "Texture",
+                    "sprite": "assets/Heart.png"
+                }
+            ]
+        },
+        {
+            "type": "triforce",
+            "position": [
+                169,
+                190
+            ],
+            "dimension": [
+                30,
+                30
+            ],
+            "id": "Triforce",
+            "depth": 1,
+            "components": [
+                {
+                    "type": "Animation",
+                    "sprite": "assets/Triforce.png",
+                    "framerate": 4,
+                    "sequence": [
+                        {
+                            "name": "shine",
+                            "first": 0,
+                            "last": 1
+                        }
+                    ]
+                },
+                {
+                    "type": "Sound",
+                    "sequence": [
+                        {
+                            "name": "pulse",
+                            "path": "assets/Audio/Ping.wav"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "plate",
+            "position": [
+                592,
+                276
+            ],
+            "dimension": [
+                48,
+                48
+            ],
+            "id": "Plate",
+            "depth": 1,
+            "components": [
+                {
+                    "type": "Animation",
+                    "sprite": "assets/Plate.png",
+                    "framerate": 4,
+                    "sequence": [
+                        {
+                            "name": "unpressed",
+                            "first": 0,
+                            "last": 0
+                        },
+                        {
+                            "name": "pressed",
+                            "first": 1,
+                            "last": 1
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "trap",
+            "position": [
+                -100,
+                -100
+            ],
+            "dimension": [
+                48,
+                48
+            ],
+            "id": "Trap",
+            "depth": 1,
+            "components": [
+                {
+                    "type": "Texture",
+                    "id": "Texture",
+                    "sprite": "assets/Trap.png"
+                }
+            ]
+        },
+        {
+            "type": "bar",
+            "position": [
+                0,
+                0
+            ],
+            "dimension": [
+                42,
+                12
+            ],
+            "id": "HealthBar",
+            "depth": 3,
+            "components": [
+                {
+                    "type": "Texture",
+                    "id": "Base",
+                    "sprite": "assets/HealthBar.png"
+                },
+                {
+                    "type": "Texture",
+                    "id": "Full",
+                    "sprite": "assets/HealthBarFull.png"
+                }
+            ]
+        },
+        {
+            "type": "bar",
+            "position": [
+                50,
+                15
+            ],
+            "dimension": [
+                200,
+                24
+            ],
+            "id": "MainHealthBar",
+            "depth": 3,
+            "components": [
+                {
+                    "type": "Texture",
+                    "id": "Base",
+                    "sprite": "assets/MainHealthBar.png"
+                },
+                {
+                    "type": "Texture",
+                    "id": "Full",
+                    "sprite": "assets/MainHealthBarFull.png"
+                }
+            ]
+        },
+        {
+            "type": "staticimage",
+            "position": [
+                0,
+                0
+            ],
+            "dimension": [
+                48,
+                48
+            ],
+            "id": "Face",
+            "depth": 0,
+            "components": [
+                {
+                    "type": "Texture",
+                    "id": "Texture",
+                    "sprite": "assets/Face.png"
+                }
+            ]
+        },
+        {
+            "type": "slider",
+            "position": [
+                50,
+                15
+            ],
+            "dimension": [
+                144,
+                24
+            ],
+            "id": "VolumeSlider",
+            "depth": 1,
+            "components": [
+                {
+                    "type": "TextureDim",
+                    "id": "Slider",
+                    "position": [
+                        656,
+                        15
+                    ],
+                    "dimension": [
+                        144,
+                        24
+                    ],
+                    "sprite": "assets/Bar.png"
+                },
+                {
+                    "type": "TextureDim",
+                    "id": "Dot",
+                    "position": [
+                        776,
+                        15
+                    ],
+                    "dimension": [
+                        24,
+                        24
+                    ],
+                    "sprite": "assets/Dot.png"
+                },
+                {
+                    "type": "Text",
+                    "text": "10",
+                    "position": [
+                        616,
+                        15
+                    ],
+                    "font": "assets/Fonts/Nes.ttf"
+                }
+            ]
+        },
+        {
+            "type": "boss",
+            "position": [
+                112,
+                276
+            ],
+            "dimension": [
+                96,
+                96
+            ],
+            "id": "Boss",
+            "depth": 1,
+            "components": [
+                {
+                    "type": "Animation",
+                    "sprite": "assets/Boss.png",
+                    "framerate": 5,
+                    "sequence": [
+                        {
+                            "name": "sleep",
+                            "first": 0,
+                            "last": 0
+                        },
+                        {
+                            "name": "up",
+                            "first": 0,
+                            "last": 1
+                        },
+                        {
+                            "name": "left",
+                            "first": 4,
+                            "last": 5
+                        },
+                        {
+                            "name": "right",
+                            "first": 6,
+                            "last": 7
+                        },
+                        {
+                            "name": "down",
+                            "first": 2,
+                            "last": 3
+                        },
+                        {
+                            "name": "chase",
+                            "first": 8,
+                            "last": 9
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
