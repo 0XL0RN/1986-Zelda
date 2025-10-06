@@ -15,7 +15,7 @@ A simple 2D test game inspired by the classic 1986 The Legend of Zelda, built us
 - Proximity Sound For Triforce
 
 ## Preview
-![Zelda title screen](FrontPage.png)
-![Gameplay](Gameplay.png)
-![Saves menu](Saves.png)
-![Win Menu](Win.png)
+![Zelda title screen](https://github.com/0XL0RN/1986-Zelda/blob/main/Readme/FrontPage.png)
+![Gameplay](https://github.com/0XL0RN/1986-Zelda/blob/main/Readme/Gameplay.png)
+![Saves menu](https://github.com/0XL0RN/1986-Zelda/blob/main/Readme/Saves.png)
+![Win Menu](https://github.com/0XL0RN/1986-Zelda/blob/main/Readme/Win.png)
